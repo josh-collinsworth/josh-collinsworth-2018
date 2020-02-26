@@ -1,0 +1,106 @@
+@import '_vars';
+@import '_global';
+@import '_typography';
+@import '_media-queries';
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-style: italic;
+ font-weight: bold;
+ src: url("../webfonts/3570B9_4_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_4_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-weight: bold;
+ font-style: normal;
+ src: url("../webfonts/3570B9_3_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_3_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-style: normal;
+ font-weight: normal;
+ src: url("../webfonts/3570B9_2_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_2_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-style: italic;
+ font-weight: normal;
+ src: url("../webfonts/3570B9_1_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_1_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: $sagona;
+ src: url("../webfonts/3570B9_0_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_0_0.woff") format("woff");
+}
+
+body {
+	background: lighten($lightgray, 30%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $sagona;
+	font-weight: normal!important;
+	margin: .2em 0 .5em!important;
+	color: $darkgray!important;
+	line-height: 1.1!important;
+}
+
+h2 {
+	font-size: calc(.9rem + 1vw);
+}
+
+.postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .wrap>h2:first-child {
+	font-size: 3em;
+}
+
+span.post-state {
+	font-family: $sagona;
+}
+
+#adminmenu, #adminmenuback, #adminmenuwrap {
+	background: $darkgray;
+}
+
+.wrap .add-new-h2, .wrap .add-new-h2:active, .wrap .page-title-action, .wrap .page-title-action:active {
+    color: $darkgray;
+    border: 2px solid $lightgray;
+}
+
+.wp-core-ui .button-link {
+	color: $darkgray;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu .wp-submenu, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {
+	background: darken($darkgray, 10%);
+}
+
+.wp-core-ui .button-primary {
+	background: $yellow;
+	border-color: darken($yellow, 10%);
+}
+
+
+.ui-draggable-handle, .ui-sortable-handle, .customize-section-title, .widget-title {
+	@include flexy(wrap, space-between);
+}
+
+a.button {
+    font-weight: bold;
+}
+
+button.handlediv {
+	position: absolute;
+	right: 0;
+}
+
+.tablenav-pages-navspan {
+    height: auto;
+}	

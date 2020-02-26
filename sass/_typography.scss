@@ -1,0 +1,221 @@
+h1, h2, h3, h4, h5, h6, b, strong, nav ul, a.read-more, input[type=button], input[type=submit], button {
+	font-family: 'AmsiPro';
+	font-weight: bold;
+	color: $darkgray;
+}
+
+i, em {
+	font-family: 'AmsiPro';
+	font-weight: normal;
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, div, span, blockquote, a, code, pre, table, tr, td {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a.read-more {
+	@include sagona;
+	&:after {
+		content: ' ->';
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+	margin: 2em 0 .5em;
+	color: $darkgray;
+	display: block;
+	width: 100%;
+}
+
+a h1, h1 a, a h2, h2 a, a h3, h3 a:not(.open-plugin-details-modal), a h4, h4 a, a h5, h5 a, a h6, h6 a {
+	text-decoration: none;
+	position: relative;
+}
+
+h1 {
+	font-size: calc(1.8rem + 2vw);
+}
+
+h2 {
+	font-size: calc(1.6rem + 1.5vw);
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-size: calc(1.4rem + 1vw);
+}
+
+.home p {
+    @include sagona;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+p {
+	margin-bottom: 1.2em;
+	a {
+		color: $darkgray;
+		position: relative;
+		line-height: 1em;
+		text-decoration: underline;
+		text-decoration-color: $yellow;
+		text-decoration-skip: objects;
+		text-decoration-skip-ink: auto;
+		line-height: 1;
+		img {
+			background: #fff;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $darkgray;
+}
+
+blockquote, p.highlight, .single p.post-info + p {
+	font-size: 1.4em;
+	font-family: $sagona;
+	line-height: 1.3em;
+	margin: 2em 0;
+}
+
+p.post-info {
+	// border-top: 2px solid $lightgray;
+	// border-bottom: 2px solid $lightgray;
+	padding: 0 0 1em;
+	font-size: .8em;
+	line-height: 1.2;
+	& + p {
+		margin: 1em 0 0;
+	}
+}
+
+#design-header ~ p {
+	font-family: $sagona;
+}
+
+code {
+	font-family: Courier, monospace;
+	padding: .1em;
+	background-color: lighten($lightblue, 30%);
+}
+
+pre {
+	padding: 1rem 1.5rem;
+	width: 100%;
+	background-color: lighten($lightblue, 30%);
+	font-family: Courier, mono;
+	border-radius: 8px;
+	font-size: .8rem;
+	overflow-y: auto;
+	margin: 3em 0;
+}
+
+pre, code {
+	font-weight: 500;
+}
+
+code b, code strong, pre b, pre strong {
+	font-family: Courier Bold, monospace;
+	font-weight: 700;
+}
+
+small {
+	font-size: .7em;
+}
+
+.single h1 {
+	margin-top: 5rem;
+}
+
+//Ratings
+.rating {
+	@include sagona;
+	@include flexy(wrap, space-between, center, center);
+	background: lighten($lightblue, 37%);
+	padding: .5em .7em;
+	width: calc(100% + 1em);
+	position: relative;
+	left: -.7em;
+	border-radius: 4px;
+	a {
+		text-shadow: none!important;
+	}
+	strong {
+		color: lighten($lightblue, 30%);
+		margin: 0 .5em;
+		span.rating-highlight {
+			color: $yellow;
+		}
+	}
+	small {
+		font-weight: normal;
+	}
+}
+
+
+//Headers on "essential" post
+.postid-1778 h3 {
+    margin-top: 0!important;
+}
+
+
+//Fix Jetpack stuff
+.sd-content ul li:before{
+	display: none;
+}
+.jp-relatedposts-post-a {
+    line-height: 1.4em;
+}
+
+
+.project p, p.project-description {
+	font-family: $sagona;
+	font-size: 0.9em;
+	line-height: 1.6em;
+	margin: 0 0 1em;
+	max-width: $breakpoint1;
+}
+
+.wp-block-image figcaption {
+	font-family: $sagona;
+	font-size: .85rem;
+	line-height: 1.5em;
+	text-align: left;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	margin: 0 1em 2em;
+}
+
+.CodeMirror {
+	border-radius: .25rem;
+
+	&-lines {
+		font-size: 0.8rem;
+		line-height: 1.5em;
+
+		@media (min-width: 600px) {
+			padding: 1rem;
+		}
+	}
+}
+
+.wp-block-embed, .wp-block-image {
+
+	figcaption {
+		text-align: center;
+		font-size: .8rem;
+		color: #53565a;
+		margin: 0;
+		font-family: "Sagona-BookItalic";
+	}
+
+	& + p {
+		margin-top: 3em;
+	}
+}

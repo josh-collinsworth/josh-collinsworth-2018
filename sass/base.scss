@@ -1,0 +1,20 @@
+ /*!
+ Theme Name:   Josh Collinsworth 2018
+ Description:  A built-from-scratch, fairly minimalist theme for joshcollinsworth.com for 2018. Has a few plugin dependencies, though.
+ Version:      1.2.1
+ Author:       Josh Collinsworth
+ Author URI:   http://joshcollinsworth.com
+ Text Domain:  josh-collinsworth-2018
+ Tags:         responsive
+*/
+
+@import '_vars';
+@import '_reset';
+@import '_global';
+@import '_main';
+@import '_headers-and-footers';
+@import '_layout';
+@import '_forms';
+@import '_typography';
+@import '_wp-core';
+@import '_media-queries';

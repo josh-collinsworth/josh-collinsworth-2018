@@ -1,0 +1,34 @@
+:root {
+    --darkgray: #53565a;
+    --border: 1em solid var(--darkgray);
+}
+
+nav#embed-nav, #embed-footer {
+    height: auto;
+    border-bottom: 16px solid#53565a;
+
+}
+
+footer#embed-footer {
+    height: auto;
+    border-top: 8px solid#53565a;
+    top: -6px;
+}
+
+.embed-nav .code-types, .embed-nav .result-button-list {
+    margin-top: 0px;
+}
+
+#code-page iframe {
+    border: var(--border);
+}
+
+.embed-footer::before {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+a.large-logo.edit-on-codepen {
+    top: -6px;
+    position: relative;
+}

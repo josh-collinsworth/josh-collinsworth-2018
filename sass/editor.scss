@@ -1,0 +1,61 @@
+@import '_vars';
+@import '_reset';
+@import '_global';
+//@import '_main';
+@import '_bullets';
+//@import '_headers-and-footers';
+@import '_layout';
+@import '_forms';
+@import '_typography';
+@import '_wp-core';
+@import '_media-queries';
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-style: italic;
+ font-weight: bold;
+ src: url("../webfonts/3570B9_4_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_4_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-weight: bold;
+ font-style: normal;
+ src: url("../webfonts/3570B9_3_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_3_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-style: normal;
+ font-weight: normal;
+ src: url("../webfonts/3570B9_2_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_2_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: 'AmsiPro';
+ font-style: italic;
+ font-weight: normal;
+ src: url("../webfonts/3570B9_1_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_1_0.woff") format("woff");
+}
+
+@font-face {
+ font-family: $sagona;
+ src: url("../webfonts/3570B9_0_0.woff2") format("woff2"),
+        url("../webfonts/3570B9_0_0.woff") format("woff");
+}
+
+html {
+	font-size: 16px;
+}
+
+body#tinymce {
+	padding: 2em!important;
+	min-height: auto;
+	p {
+		width: 100%;
+	}
+}

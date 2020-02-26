@@ -1,0 +1,29 @@
+$yellow: #ffd100;
+$orange: #ff6a13;
+$lightgray: #a7a8aa;
+$midgray: #888b8d;
+$darkgray: #53565a;
+$black: #101820;
+$lightblue: #7BA7BC;
+$darkblue: #34657F;
+
+$sagona: Sagona-BookItalic;
+
+$breakpoint1: 760px;
+$breakpoint2: 840px;
+$breakpoint3: 960px;
+$breakpoint4: 1400px;
+
+@mixin flexy($fw: wrap, $jc: space-between, $ai: center, $ac: flex-start){
+	display: flex;
+	flex-wrap: $fw;
+	justify-content: $jc;
+	align-items: $ai;
+	align-content: $ac;
+}
+
+@mixin sagona() {
+	font-family: Sagona-BookItalic;
+	font-weight: normal;
+	font-style: normal;
+}

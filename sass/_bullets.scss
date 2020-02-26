@@ -1,0 +1,32 @@
+ul:not(.pages), ol {
+	margin-left: 1.2em;
+	li {
+		margin-bottom: 1em;
+		position: relative;
+		&:before {
+		    content: '[ ]';
+		    position: absolute;
+		    left: -1.8em;
+		    line-height: 1.4;
+		    font-family: AmsiPro;
+		    font-weight: bold;
+		    color: $yellow;
+		    top: .35em;
+		    font-size: .7em;
+		}
+		p {
+			margin: 1em 0;
+		}
+	}
+}
+
+ol {
+	list-style-type: decimal;
+	width: 100%;
+	li {
+		&:before {
+			content: '';
+			display: none;
+		}
+	}
+}

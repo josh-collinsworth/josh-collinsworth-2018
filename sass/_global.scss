@@ -1,0 +1,19 @@
+* {
+	/*background: skyblue!important;*/
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'AmsiPro';
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5em;
+	color: #333;
+	min-height: 100vh;
+	@include flexy(wrap, center, flex-start, flex-start);
+	background: #fff;
+}
